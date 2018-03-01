@@ -1,6 +1,6 @@
 ## ArchiveSpark-server
 
-![ArchiveSpark Logo](https://github.com/helgeho/ArchiveSpark/raw/master/logo.png)
+[![ArchiveSpark Logo](https://github.com/helgeho/ArchiveSpark/raw/master/logo.png)](https://github.com/helgeho/ArchiveSpark)
 
 A server application that provides a Web service API for [ArchiveSpark](https://github.com/helgeho/ArchiveSpark), the distributed platform for easy data processing, extraction as well as derivation for Web archives. This way, third-party applications can use ArchiveSpark as a service to integrate temporal Web archive data with a flexible, easy-to-use interface. 
 
