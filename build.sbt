@@ -1,6 +1,6 @@
 lazy val commonSettings = Seq(
   name := "archivespark-server",
-  version := "1.0",
+  version := "1.3.0.1",
   scalaVersion := "2.11.12"
 )
 
@@ -11,6 +11,7 @@ lazy val web2warc = (project in file(".")).
       "org.apache.spark" %% "spark-core" % "2.2.0" excludeAll(
         ExclusionRule(organization = "org.apache.httpcomponents", name = "httpclient"),
         ExclusionRule(organization = "org.apache.httpcomponents", name = "httpcore")),
+      "org.apache.spark" %% "spark-sql" % "2.2.0",
       "org.scala-lang" % "scala-reflect" % scalaVersion.value % "provided",
       "org.scala-lang" % "scala-compiler" % scalaVersion.value % "provided",
       "org.scalatra" %% "scalatra" % "2.5.4",
@@ -19,7 +20,7 @@ lazy val web2warc = (project in file(".")).
       "ch.qos.logback" % "logback-classic" % "1.2.3" % "runtime",
       "org.eclipse.jetty" % "jetty-webapp" % "9.2.19.v20160908" % "container;compile",
       "javax.servlet" % "javax.servlet-api" % "3.1.0" % "provided",
-      "com.github.helgeho" %% "archivespark" % "2.7.6" % "provided"
+      "com.github.helgeho" %% "archivespark" % "3.0.1" % "provided"
     )
   )
 
